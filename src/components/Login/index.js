@@ -1,14 +1,11 @@
 // Write your code here
 import './index.css'
 
-const loginFun = isLogin => {
-  this.setState({isLogin: true})
-}
-
 const Login = props => {
-  const {isLogin} = props
+  const {fun} = props
+
   return (
-    <button type="button" className="btn" onClick={loginFun}>
+    <button type="button" className="btn" onClick={fun}>
       Login
     </button>
   )

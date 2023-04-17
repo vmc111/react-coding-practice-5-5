@@ -7,15 +7,19 @@ import Logout from '../Logout'
 class Home extends Component {
   state = {isLogin: false}
 
+  loginFun = () => this.setState({isLogin: true})
+
+  logoutFun = () => this.setState({isLogin: false})
+
   render() {
     const {isLogin} = this.state
-    console.log(isLogin)
+    // console.log(isLogin)
 
     const message = isLogin ? 'Welcome User' : 'Please Login'
     const btnEle = !isLogin ? (
-      <Login isLogin={isLogin} />
+      <Login isLogin={isLogin} fun={this.loginFun} />
     ) : (
-      <Logout isLogin={isLogin} />
+      <Logout isLogin={isLogin} fun={this.logoutFun} />
     )
 
     return (
