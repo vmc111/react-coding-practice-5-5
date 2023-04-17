@@ -1,0 +1,27 @@
+/* Write your CSS here */
+.home-bg {
+  height: 100vh;
+  width: 100%;
+
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-image: linear-gradient(to bottom, #2b2c49, #b5b9ff);
+
+  min-width: 300px;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border-radius: 8px;
+}
